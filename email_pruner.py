@@ -50,6 +50,8 @@ if __name__ == "__main__":
     parser = ap()
     parser.add_argument('-e', '--emails', type=int, default=1000, metavar="emails",
                         help='The number of emails to generate (default=1000)', required=False)
+    parser.add_argument('-d', '--dump', action="store_true",
+                        help='Dump the email list to the console (Default=no)', required=False)
     args = parser.parse_args()
     email_count = args.emails
 
@@ -62,7 +64,8 @@ if __name__ == "__main__":
     start = reset_stopwatch()
     list_with_dups = spawn(email_count)
     print(f"GENERATED COMPLETE LIST WITH DUPLICATES: (count = {len(list_with_dups)})")
-    # [print(i) for i in list_with_dups]
+    if args.dump:
+        [print(i) for i in list_with_dups]
     t1 = get_elapsed(start)
     print("Elapsed Time: ", t1)
 
@@ -76,7 +79,8 @@ if __name__ == "__main__":
     start = reset_stopwatch()
     dup_list, orig_list = dups(list_with_dups)
     print(f"IDENTIFIED DUPLICATES IN COMPLETE LIST: (count = {len(dup_list)})")
-    # [print(i) for i in dup_list]
+    if args.dump:
+        [print(i) for i in dup_list]
     t2 = get_elapsed(start)
     print("Elapsed time: ", t2)
 
