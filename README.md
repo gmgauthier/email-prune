@@ -1,7 +1,7 @@
-# email-pruner
+# email-pruner [![gmgauthier](https://circleci.com/gh/gmgauthier/email-prune.svg?style=svg)](https://circleci.com/gh/gmgauthier/email-prune)
 ### automattic coding challenge solution
 
-[![gmgauthier](https://circleci.com/gh/gmgauthier/email-prune.svg?style=svg)](https://circleci.com/gh/gmgauthier/email-prune)
+
 
 * author: Greg Gauthier
 * job application: Senior Quality Engineer 
