@@ -12,9 +12,10 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          command: pipenv run pytest
-          name: Test
-
+          command: |
+            sudo pip install pipenv
+            pipenv install
+            pipenv run pytest
 workflows:
   main:
     jobs:
