@@ -13,7 +13,6 @@ jobs:
       - python/save-cache
       - run:
           command: |
-            sudo pip install pipenv
             pipenv install
             pipenv run pytest
 workflows:
