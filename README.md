@@ -1,11 +1,6 @@
 # email-pruner [![gmgauthier](https://circleci.com/gh/gmgauthier/email-prune.svg?style=svg)](https://circleci.com/gh/gmgauthier/email-prune)
-### automattic coding challenge solution
 
-
-
-* author: Greg Gauthier
-* job application: Senior Quality Engineer 
-* date: 21 October 2020
+An experiment in Python lists.
 
 #### Requirements
 * Python 3.7+ (needed for the "fprint" statements)
